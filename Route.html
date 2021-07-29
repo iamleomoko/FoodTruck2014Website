@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Route</title>
+
+    
+<style type="text/css">
+.Main {
+	background-color: #000;
+	height: 1200px;
+	width: 950px;
+	margin-right: 200px;
+	margin-left: 200px;
+	
+}
+.TimeTable {
+	background-color: #CCC;
+	height: 532px;
+	width: 922px;
+	margin-top: 10px;
+	margin-left: 12px;
+	color: #333;
+	font-family: "Comic Sans MS", cursive;
+	background-image: url(images/background-4.jpg);
+}
+.Description {
+	height: 355px;
+	width: 200px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	background-image: url(images/background-4.jpg);
+	margin-top: 0px;
+}
+.header {
+	background-color: #000;
+	height: 150px;
+	width: 950px;
+	margin-bottom: 10px;
+}
+.footer {
+	background-color: #000;
+	height: 150px;
+	width: 950px;
+	margin-right: 200px;
+	margin-left: 0px;
+	margin-top: 8px;
+	font-size: 11pt;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	list-style: none;
+	text-decoration: none;
+	font-color: #000;
+	text-align: center;
+	font-style: italic;
+	color: #CCC;
+}
+a:link {
+	color: #F00;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11pt;
+	font-style: oblique;
+	word-spacing: 6pt;
+}
+a:visited {
+	font-style: italic;
+	color: #900;
+	font-size: 12pt;
+}
+a:hover {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13pt;
+	font-style: italic;
+	color: #F30;
+}
+.map {
+	background-color: #666;
+	height: 390px;
+	width: 940px;
+}
+#statement {
+	margin-top: 23px;
+	margin-right: 12px;
+	margin-left: 12px;
+	height: 230px;
+	width: 450px;
+	float: right;
+	background-image: url(images/menu-bg.png);
+}
+</style>
+<style type="text/css">
+body {
+	background-image: url(images/bg3.jpg);
+	background-repeat: repeat-y;
+	background-color: #30C;
+}
+
+/* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
+ul.MenuBarHorizontal a.MenuBarItemSubmenuHover
+{
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	background-color: #F00;
+}
+#apDiv2 {
+	position: absolute;
+	width: 40px;
+	height: 39px;
+	z-index: 2;
+	left: 1068px;
+	top: 173px;
+}
+#apDiv1 {
+	position: absolute;
+	width: 41px;
+	height: 39px;
+	z-index: 1;
+	left: 1023px;
+	top: 173px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 44px;
+	height: 43px;
+	z-index: 3;
+	left: 1110px;
+	top: 830px;
+}
+#apDiv4 {
+	position: absolute;
+	width: 43px;
+	height: 43px;
+	z-index: 4;
+	left: 1057px;
+	top: 831px;
+}
+#apDiv5 {
+	position: absolute;
+	width: 128px;
+	height: 72px;
+	z-index: 5;
+	left: 31px;
+	top: 14px;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv6 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 6;
+	left: 3px;
+	top: 280px;
+}
+#apDiv7 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 6;
+	left: 3px;
+	top: 251px;
+}
+#apDiv8 {
+	position: absolute;
+	width: 208px;
+	height: 361px;
+	z-index: 7;
+	left: 802px;
+	top: 652px;
+	background-color: #D6D6D6;
+}
+.Main .TimeTable #apDiv8 .Description p {
+	text-align: left;
+}
+.location {
+	font-size: 20px;
+	color: #000000;
+	font-weight: bold;
+}
+#apDiv9 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 8;
+	left: 227px;
+	top: 774px;
+}
+#apDiv10 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 9;
+	left: 919px;
+	top: 1030px;
+}
+#apDiv11 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 9;
+	left: 833px;
+	top: 1015px;
+}
+#apDiv13 {
+	position: absolute;
+	width: 270px;
+	height: 115px;
+	z-index: 9;
+	left: 223px;
+	top: 1174px;
+}
+#apDiv22 {
+	position: absolute;
+	width: 52px;
+	height: 47px;
+	z-index: 9;
+	left: 946px;
+	top: 1233px;
+}
+	#apDiv23 {
+	position: absolute;
+	width: 52px;
+	height: 47px;
+	z-index: 9;
+	left: 1024px;
+	top: 1231px;
+	}
+#apDiv12 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 10;
+	left: 765px;
+	top: 1021px;
+}
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="Main">
+  <div class="header">
+<a href="index.html"><img src="images/logo2.png" width="293" height="148" align="left" />
+    <img src="images/Y_H_foodtruck-1.jpg" width="349" height="148" align="right" /></div>
+  <table height="39">
+    <tr>
+      <td width="805" height="33"><ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Our business.html">Our Business</a></li>
+        <li><a href="Menu.html">Menu</a>
+         <ul>
+        <li><a href="Drinks.html">Drinks</a></li>
+        <li><a href="IceCream.html">IceCream</a></li>
+          <li><a href="Lunch.html">Lunch</a></li>
+        </ul></li>
+        <li><a href="route.html">Route</a></li>
+        <li><a class="MenuBarItemSubmenu" href="Members.html">Members</a>
+          <ul>
+            <li><a href="Liyolo Moko.html">Liyolo Moko</a></li>
+            <li><a href="Kishan.html">Kishan Parsotam</a></li>
+            <li><a href="Kyle.html">Kyle Julies</a></li>
+            <li><a href="Simone kolbe.html">Simone Kolbe</a></li>
+          </ul>
+        </li>
+<li><a href="Contact.html">Contact Us</a></li>
+    </ul></td>
+    </tr>
+  </table>
+  <div id="apDiv1"><a href="https://www.facebook.com/pages/Eat-n-Run/283152418552219?ref=hl"><img src="images/Cracked-Facebook-Logo.jpg" width="32" height="30" /></a></div>
+  <div id="apDiv2"><a href="https://twitter.com/EatnRun1C"><img src="images/logotwitter.png" width="30" height="34" /></a></div>
+<hr />
+  <div class="map">
+    <iframe src="https://www.google.com/maps/d/embed?mid=zSBQ9S8FVmoU.konJEEaHsSPU" width="940" height="390"></iframe>
+
+  </div>
+  <div class="TimeTable">
+    <table border="1" cellpadding="0" cellspacing="0">
+      <col width="145" />
+      <col width="232" />
+      <col width="129" />
+      <tr>
+        <td width="145"><div align="center">Day</div></td>
+        <td width="232"><div align="center">Time</div></td>
+        <td width="129"><div align="center">Location</div></td>
+      </tr>
+      <tr>
+        <td rowspan="3"><div align="center">Monday-Saturday</div></td>
+        <td><div align="center">12:00-13:30</div></td>
+        <td><div align="center">A</div></td>
+      </tr>
+      <tr>
+        <td><div align="center">14:00:16:00</div></td>
+        <td><div align="center">B</div></td>
+      </tr>
+      <tr>
+        <td><div align="center">16:30:17:30</div></td>
+        <td><div align="center">C</div></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <div id="apDiv8">
+      <div class="Description">
+        <p><u>Location  Legend</u><br />
+          <span class="location">A</span>-Tennant Street<br />
+        Zonnebloem <br />
+        Cape Town<br />
+        7925</p>
+        
+        <span class="location">B</span>- Old Marine Drive, Foreshore <br />Cape  Town<br /> 7325 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />
+        <span class="location">C</span>- Longmarket Street<br /> Cape Town City Centre <br /> Cape Town   </p>
+      </div>
+    </div>
+    <div id="apDiv9"><img src="images/trunk.jpg" width="522" height="294" /></div>
+  </div>
+  <div class="footer">
+<nav>
+		<br />
+        <br /><br />
+        <li>
+        <a href="index.html">| Home   | </a>   
+        <a href="About.html"> About | </a>
+        <a href="Menu.html">  Menu | </a>   
+        <a href="route.html"> Route | </a>
+		<a href="Contact.html"> Contact Us | </a>
+        </li>
+</nav>
+<br />
+<p> © 2014 False Corporation, All rights reserved Project Site.</p>
+</div>
+<div id="apDiv13"><img src="images/logo1 (1).png" width="197" height="137" /></div>
+<div id="apDiv22"><img src="images/logotwitter.png" alt="" width="50" height="47" border="0" /></div>
+<div id="apDiv23"><a href="https://www.facebook.com/pages/Eat-n-Run/283152418552219?ref=hl"><img src="images/Cracked-Facebook-Logo.jpg" alt="" width="46" height="43" /></a></div>
+</div>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
